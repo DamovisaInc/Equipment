@@ -1,0 +1,56 @@
+name: Equipment
+description: A piece of equipment or tech
+title: ""
+labels: [equipment]
+assignees:
+  - damovisa
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the item you want/need/have
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What is this piece of equipment?
+      placeholder: eg. Jetpack
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Where can I find it?
+      placeholder: [URL]
+      value: https://
+  - type: input
+    id: price
+    attributes:
+      label: Price
+      description: What is the approximate price?
+      placeholder: eg. $1,000
+      value: $
+  - type: textarea
+    id: description-why
+    attributes:
+      label: What and why?
+      description: What is it and why do you want/need/have it?
+      placeholder: eg. I have a lot of stairs so a jetpack would save my legs
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this item?
+      options:
+        - 🔻 Low
+        - 😐 Medium
+        - 🚒 High
+        - 😰 Urgent
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      description: Any other details?
